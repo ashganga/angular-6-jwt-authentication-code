@@ -1,0 +1,7 @@
+<div id="navbar" *ngIf="showNavBar" class="navbar navbar-default">
+    <div class="container-fluid">  
+      <ul class="nav navbar-nav">
+        <li *ngFor="let menu of menuList" routerLinkActive="active"><a  [routerLink]="[menu.routePath]" routerLinkActive="active">{{menu.description}}</a></li>
+      </ul>
+    </div>
+</div>

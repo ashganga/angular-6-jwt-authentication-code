@@ -1,0 +1,12 @@
+﻿<h1>Home</h1>
+<div>      
+    <p>Welcome {{users.firstName}} {{users.lastName}}</p> 
+    <p>You can access following menus : </p>
+        <ul>
+            <li *ngFor="let menu of users.menu">
+                <p>{{menu.description}}</p> 
+            </li>
+        </ul>
+</div>
+<p><a [routerLink]="['/login']">Logout</a></p>
+
